@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags (Agrupamento)</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            
+        }
+        h1 {
+            box-shadow: 5px 7px 3px rgba(0, 0, 0, 0.329);
+        }
+        nav {
+            background-color: rgb(177, 173, 187);
+            color: white;
+            padding: 3px;
+            box-shadow: 5px 7px 3px rgba(0, 0, 0, 0.356);
+            
+        }
+        nav > a {
+            font-weight: bold;
+            margin-left: 30px;
+        }
+        nav > a:hover {
+            text-decoration: none;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 5px 8px 12px;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.226);
+        }
+        article{
+            background-color: lightgrey;
+
+        }
+        article > aside {
+            background-color: rgb(162, 180, 185);
+        }
+        footer {
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p {
+                margin: 0px;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+    </header>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    <main>
+        <section id="Assuntos">
+            <p>Assuntos, esporte e tecnologia</p>
+
+        </section>  
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia possimus est similique quisquam voluptatum illo dolor eligendi veniam, cumque itaque tenetur, ratione iure eaque dolore dolores! Nulla eligendi deleniti ex.</p>
+                <aside>
+                    <p>artigo feito por José santos Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>promovido pelo curso em vídeo</p>
+    </footer>
+</body>
+</html>

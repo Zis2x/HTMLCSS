@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id e #</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(218, 216, 154, 0.432);
+        }
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(201, 177, 41);
+        }
+        h2, h3{
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(224, 153, 21);
+        }
+        p {
+            color: #cf6118;
+            text-indent: 12px;
+        }
+        a {
+            font-weight: 800;
+            text-decoration: none;
+            color: rgb(192, 67, 119);
+        }
+        a:visited {
+            color: rgb(79, 43, 97);
+        }
+        a:hover {
+            text-decoration: underline;
+            background-color: rgba(139, 53, 19, 0.534);
+        }
+        .especial::before {
+            content: ">>";
+        }
+        .especial::after {
+            content: "<<";
+        }
+        #Princ {
+            background-color: rgb(228, 67, 18);
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        .Subtop{
+            text-align: center;
+        }
+        .txt {
+            text-align: justify;
+        }
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="Princ">Certo</h1>
+    <h1>Por um</h1>
+    <h2 class="Subtop">Vai vendo</h2>
+    <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dicta nulla quia, voluptas provident earum! Possimus tempora excepturi ut, porro quasi ullam perferendis vero corrupti, quaerat necessitatibus aut debitis consequatur!</p>
+    <h2>Olha isso!</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita qui, quo excepturi eaque provident labore officiis aperiam esse, praesentium ipsa eos ab et nesciunt facilis assumenda debitis fugit veritatis.</p>
+    <h2>Personalizando Links</h2>
+    <h3>Site do Curso em video e da W3C BR &downarrow;</h3>
+    <a href="https://www.cursoemvideo.com/" class="especial">Curso em vídeo site oficial</a>
+    <p><a href="https://w3c.br/"> W3C brasil</a>
+    </p>
+    <div>
+        Passe o Mouse Aqui!!
+        <p>SURPRESA!!</p>
+    </div>
+    <div>Veja o conteúdo oculto aparecendo</div>
+</body>
+</html>

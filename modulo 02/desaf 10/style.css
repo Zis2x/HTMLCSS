@@ -1,0 +1,120 @@
+@charset "UTF-8"
+
+body {
+    
+}
+header {
+    text-align: center;
+    font-weight: lighter;
+    color: white;
+    background-image: linear-gradient(to bottom, #2dc653, #155d27 90%);
+    margin: 0px;
+    padding: 10px;
+}
+nav {
+    background-color: #155d27;
+}
+nav > a {
+    
+}
+nav > a:hover {
+    text-decoration: none;
+    background-color: #4be77283;
+
+}
+nav > a:active {
+    color: #baf2bb;
+}
+main {
+    background-color: white;
+    color: black;
+    width: 800px;
+    margin: auto;
+    padding: 5px;
+    
+}
+article{
+    color: black;
+    font-weight: lighter;
+}
+.conteudo > h1 {
+            color: #054a29;
+            font-size: 24px;
+}
+.conteudo > h2 {
+            font-size: 20px;
+}
+.conteudo > p {
+            text-indent: 16px;
+}
+footer {
+        font-weight: lighter;
+        color: white;
+        background-color: #155d27;
+        padding: 1px;
+}
+h1 {
+     
+}
+h2 {
+
+}
+footer > p {
+    margin: 0px;
+    text-align: center;
+
+}
+a {
+    font-weight: lighter;
+    color: white;
+    margin-left: 15px;
+    padding: 5px;
+}
+iframe {
+      padding-left: 40px;
+}
+
+#titulo1 {
+    font-family:'idroid', sans-serif;
+    font-size: 1.4em;
+    width: 500px;
+    margin: auto;
+}
+.Subtitulo {
+    font-family: 'idroid', sans-serif;
+    color: #054a29;
+    background-color: #2dc6536c;
+}
+.ancora {
+    color: #137547;
+    font-weight: bold;
+}
+.ancora:hover {
+    text-decoration: none;
+    color: #fefffe;
+    font-weight: bold;
+    background-color: #74e791a6;
+}
+section.videoA {
+    background-color: #054a29;
+    padding: 1px;
+}
+section > iframe {
+      margin: auto;
+}
+.curiosidades > h1 {
+    font-size: 24px;
+      color: white;
+      background-color: #2dc653;
+      width: 670px;
+}
+.curiosidades > p {
+    text-indent: 20px;
+}
+section.tlista {
+    background-color: #b7efc5;
+    width: 670px;
+}
+div.Bugdroid {
+    padding-left: 35px;
+}

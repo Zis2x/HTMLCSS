@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited { /*Quando o link ja foi visitado*/
+            color: orange;
+        }
+        a:active { /* quando o da clicando*/            color: yellow;
+        }
+        .especial {
+            background-color: red;
+            color: white;
+        }
+        .especial::before { /*:: <- psuedo elemento - mexe no conteudo periferico elemento */
+             content: "*"; /*Mensagem que vai aparecer*/
+        }
+        a:hover { /* Quando passar omouse em cima*/
+            color: black;
+            text-decoration: underline;
+        }
+        a::after { /* Depois de todo link vai aparcer a palavra/simbolo*/
+            content: "(link)";
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/">Meu repositorio Git hub</a></li>
+        <li class="especial"><a href="https://www.youtube.com/">Canal no youtube</a></li>
+        <li><a href="https://www.instagram.com/">Meu instagram</a></li>
+    </ul>
+    
+</body>
+</html>
