@@ -1,0 +1,13 @@
+@charset "UTF-8"
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: 'Blackboard', Times, serif;
+}
+article h1 {
+    font-family: 'Bruno Ace SC', fantasy;
+}
