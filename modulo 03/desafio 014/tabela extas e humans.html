@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela de Exatas e Humanas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+        thead th {
+            background-color: grey;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        td {
+            font-weight: lighter;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tr > th {
+            font-weight: bold;
+            background-color: gray;
+            color: white;
+            border: 1px solid black;
+        }
+        td {
+            text-align: center;
+        }
+        .cz {
+            background-color: rgb(124, 124, 124);
+            color: white;
+        }
+        .mater{
+            background-color: white;
+            color: black;
+            
+        }
+        .thf {
+            text-align: left;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th rowspan="2" scope="col">Area</th>
+            <th rowspan="2" scope="col">Diciplinas</th>
+            <th colspan="2" scope="colgroup">Notas</th>
+            <th rowspan="2" scope="col">Media</th>
+            <tr>
+               <th scope="col">nota 1</th>
+               <th scope="col">nota 2</th>
+                </tr>  
+        </thead>
+        <tbody>
+              <tr>
+                <th rowspan="4" class="mater" scope="colgroup">Exatas</th>
+                <td class="thf";>Matemática</td>
+                  <td>00</td>
+                  <td>00</td>
+                  <td>00</td>
+              </tr>
+              <tr>
+                  <td class="thf">Fisica</td>
+                  <td>00</td>
+                  <td>00</td>
+                  <td>00</td>
+              </tr>
+              <tr>
+                <td  class="thf">Quimica</td>
+                <td>00</td>
+                  <td>00</td>
+                  <td>00</td>
+              </tr>
+              <tr>
+                <td class="thf">Biologia</td>
+                <td>00</td>
+                  <td>00</td>
+                  <td>00</td>
+              </tr>
+            <tr>
+              <th colspan="4" class="thf" scope="row">medias exatas</th>
+                <td class="cz">00</td>
+              </tr>
+              <tr>
+                <th rowspan="2" class="mater" scope="colgroup">Humanas</th>
+                <td class="thf">História</td>
+                <td>00</td>
+                <td>00</td>
+                <td>00</td>
+              </tr>
+              <tr>
+                <td class="thf">Geografia</td>
+                <td>00</td>
+                <td>00</td>
+                <td>00</td>
+              </tr>
+              <tr>
+                <th colspan="4" class="thf" scope="row">medias Humanas</th>
+                  <td class="cz">00</td>
+                </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
