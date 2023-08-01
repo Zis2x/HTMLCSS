@@ -1,0 +1,28 @@
+@charset "UtF-8"
+/*estilo impressão*/
+*{}
+html{
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+menu {
+    display: none;
+}
+header {
+    padding: 20px;
+}
+header > h1 {
+    text-align: center;
+}
+article > h2 {
+    padding: 30px;
+}
+article::after {
+    content: "Esse texto foi produzido por mim, atrvez do curso em video";
+}
+article {
+    width: 100%;
+}
