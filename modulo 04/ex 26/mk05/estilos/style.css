@@ -50,6 +50,10 @@ img {
     transform: translate(-50% -50%);
 }
 article > h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+article > h3 {
     padding-bottom: 20px;
 }
 article > p {
