@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query - Menu Responsivo</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Meu Site</h1>    
+       <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Paginas</a></li>
+                <li><a href="#">Conatato</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Ajuda</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>A Rivalidade Coca vs Pepsi</h2>
+            <p>A Coca-Cola foi inventada em 1886, enquanto a Pepsi chegou em 1898. Desde então, os dois refrigerantes travam uma guerra comercial que chegou até o espaço. O feito aconteceu em 1985 e marcou o que ficou conhecido como a “Guerra Espacial das Colas”.
+                </p>
+                <p>
+                Partiu da Coca-Cola a iniciativa de enviar o refrigerante ao espaço. A empresa entrou em contato com a NASA para desenvolver uma latinha para viajar com o ônibus espacial Challenger. No ambiente de microgravidade da órbita da Terra, é necessário um mecanismo que empurre o líquido para fora apenas na hora que o astronauta quiser – do contrário, uma bagunça poderia acontecer dentro da aeronave.
+                </p>
+                <p>
+                    A lata foi adaptada para conter um saco plástico laminado com a bebida e uma bexiga pressurizada com dióxido de carbono, que servia para impulsionar o refrigerante para a boca. Também foi incluído uma válvula metálica para impedir o vazamento do líquido.  
+                </p>
+                <p>
+                    <img src="imagens/coca.jpg" alt="Imagem da Coca">
+                </p>
+                   <h2>A Criação das Latas</h2>
+                   <p>
+                    Quando a Pepsi soube dos planos da Coca-Cola, ela implorou à NASA para participar da mesma missão. A agência espacial não viu problema nisso, desde que a empresa desenvolvesse uma latinha a tempo do lançamento.
+                    </p>
+                    <p>
+                    Enquanto a Coca investiu cerca de US$ 250 mil no dispositivo, a sua rival pegou um projeto em andamento, orçado em US$ 14 milhões, para adaptar uma nova lata – a diferença era que o dióxido de carbono não seria pré-pressurizado, sendo produzido por elementos químicos dentro do recipiente. </p>
+                    <p>
+                    Ainda assim, por ter sido feito às pressas, o projeto da Pepsi parecia ter um pior acabamento. A latinha parecia mais um dispenser de chantilly e tinha menos tecnologia
+                   </p>
+          <p>
+          <img src="imagens/pepsi.jpg" alt="imagem pepsi">
+         </p> 
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+           if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+           } else { 
+            itens.style.display = 'block'
+           }
+        }
+    </script>
 </body>
 </html>
