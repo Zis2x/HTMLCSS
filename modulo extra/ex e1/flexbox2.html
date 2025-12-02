@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        } /*Importante colocar no display:"Flex" e as classes na tag em que for usar a propriedade flex-box*/
+       .container { /*"flex" sao as propriedades flex box*/
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: baseline;
+                flex-wrap: wrap;
+                align-content: center;
+                gap: 8px 10px;
+              /*indiferente*/
+                background-color: rgba(243, 243, 137, 0.678);
+                border-radius: 5px;
+                width: 500px;
+                height: 500px;
+                padding: 2px;
+            }
+        .bloco1{
+            background-color: teal;
+            margin: 2px 0px;
+            border-radius: 5px;
+            width: 150px;
+            height: 150px;
+            padding: 2px;
+            
+        }
+        .bloco2{
+            background-color: rgb(128, 0, 96);
+            margin: 2px 0px;
+            border-radius: 5px;
+            width: 150px;
+            height: 150px;
+            padding: 2px;
+        }
+        .bloco3{
+            background-color: rgb(255, 38, 0);
+            margin: 2px 0px;
+            border-radius: 5px;
+            width: 150px;
+            height: 150px;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>teste flexbox</h1>
+    <main class="container">
+
+        <div class="bloco1"></div>
+        <div class="bloco2"></div>
+        <div class="bloco3"></div>
+
+    </main>
+</body>
+</html>

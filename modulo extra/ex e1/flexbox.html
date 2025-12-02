@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        body{
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: rgb(141, 196, 196);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        p {
+            text-indent: 10px;
+            text-align: justify;
+            line-height: 1.3em;
+        }
+        main {
+            background-color: aliceblue;
+        }
+        footer{
+            background-color: gainsboro;
+            text-align: center;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+        }
+        div > img {
+            max-width: 100%;
+        }
+        .cont {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-start;
+        }
+        .coisas {
+            max-width: 1020px;
+            background-color: white;
+            justify-content: center;   
+        }
+        article {
+            width: 800px;
+            justify-self: center;
+        }
+        .coisas p {
+            margin-left: 20px ;
+            text-align: justify;
+            max-width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Testando Flex-box</h1>
+    </header>
+    <main class="cont">
+        <article class="coisas">
+            <h1>Titulo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, iste distinctio laborum impedit aspernatur non omnis culpa error, autem facere odit maiores tempora esse accusantium. Aut delectus dignissimos ipsum commodi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, consequuntur officiis alias, accusamus cumque sit facilis, officia aliquid voluptas tempora nulla voluptatibus corrupti beatae vitae. Impedit molestias molestiae laborum distinctio?</p>
+            <div>
+                <img src="imagens/icon-pc.png" alt="">
+            </div>
+            <h2>Subtitulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt possimus mollitia natus perferendis repellendus nisi voluptatum, suscipit provident nemo repellat accusantium accusamus assumenda numquam commodi aut excepturi necessitatibus voluptates Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dignissimos quaerat facilis quas! Quaerat, repellendus! Consectetur aperiam laborum reprehenderit laboriosam tempora, quia dicta alias aliquid ipsum. Sequi animi quibusdam earum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio distinctio iste harum velit labore molestias autem. Quasi sunt aut officiis suscipit non id cum? Enim distinctio impedit tempora quis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, cum. Ducimus, corporis qui cumque natus blanditiis nulla aperiam aspernatur, totam officia porro incidunt minus temporibus possimus distinctio, eaque eligendi illum! lo</p>
+            <footer>
+                <p>Silva 2023</p>
+            </footer>
+        </article>
+    </main>
+</body>
+</html>

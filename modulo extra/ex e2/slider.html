@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .slider {
+            margin: 0px auto;
+            width: 800px;
+            height: 400px;
+            overflow: hidden;
+        }
+        .slides {
+            width: 400%;
+            height: 400px;
+            display: flex;
+        }
+        img {
+            width: 800px;
+        }
+        .slides input {
+            display: none;
+        }
+        .slide {
+            width: 25%;
+            position: relative;
+        }
+        .manualnav {
+            position: absolute;
+            width: 600px;
+            margin-top: -40px;
+            display: flex;
+        }
+        .manual-btn {
+            border: 2px solid white;
+            padding: 5px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .manual-btn:not(:last-child) {
+            margin-right: 40px;
+        }
+        .manual-btn:hover {
+            background-color: white;
+        }
+        #radio1:checked~.first{
+            margin:0px;
+        }
+        #radio2:checked~.first{
+            margin-left: 25%;
+        }
+        #radio3:checked~.first{
+            margin-left: 50%;
+        }
+        #radio2:checked~.first{
+            margin-left: -75%;
+        }
+        .navegar {
+            border: 2px solid rgb(24, 24, 109);
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio2">
+           
+
+            <div class="slide prim">
+                 <img src="imagens/pexels-leonardo-luz-17345360.jpg" alt="">
+             </div>
+             <div class="slide">
+                <img src="imagens/pexels-leonardo-luz-17345362.jpg" alt="">
+            </div>
+
+               <!--Navigation auto, botoes-->
+               <div class="navegar">
+                <div class="btn1"></div>
+                <div class="btn2"></div>
+                <div class="btn3"></div>
+                <div class="btn4"></div>
+                </div>
+        </div>
+        <div class="manualnav">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        img {
+            width: 100%;
+        }
+        .cont {
+            display: grid;
+            grid-template-columns: repeat(2, 250px);
+            grid-template-areas: "topo topo"
+            "meio meio2"
+            "maiob meiob2"
+            "baixo baixo";
+            gap: 20px;
+        }
+        .img1 {
+            grid-area: topo;
+        }
+        .img2 {
+            grid-area: baixo;
+        }
+        .img4{
+            grid-area: meiob;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <img src="imagens/pexels-leonardo-luz-17345360.jpg" alt="" class="img1">
+        <img src="imagens/pexels-leonardo-luz-17345362.jpg" alt="imagens" class="img2">
+        <img src="imagens/pexels-leonardo-luz-17345364.jpg" alt="" class="img3">
+        <img src="imagens/pexels-roman-odintsov-5150176.jpg" alt="" class="img4">
+    </div>
+</body>
+</html>

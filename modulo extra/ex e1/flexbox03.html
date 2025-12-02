@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+       .container { /*"flex" sao as propriedades flex box*/
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: baseline;
+                flex-wrap: wrap;
+                align-content: center;
+                gap: 8px 10px;
+
+              /*indiferente*/
+                background-color: rgba(243, 243, 137, 0.678);
+                border-radius: 5px;
+                height: 500px;
+                padding: 2px;
+                text-align: center;
+            }
+        .bloco1{
+            order: 0;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+
+            /*indiferente*/
+            background-color: teal;
+            margin: 2px 0px;
+            border-radius: 5px;
+            width: 150px;
+            height: 150px;
+            padding: 2px;
+            
+        }
+        .bloco2{
+                border: 0;
+                flex-grow: 0;
+                flex-shrink: 1;
+                flex-basis: auto;
+
+            /*indiferente*/
+            background-color: rgb(128, 0, 96);
+            margin: 2px 0px;
+            border-radius: 5px;
+            width: 150px;
+            height: 150px;
+            padding: 2px;
+        }
+        .bloco3{
+            border: 0;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+
+            /*indiferente*/
+            background-color: rgb(255, 38, 0);
+            margin: 2px 0px;
+            border-radius: 5px;
+            width: 150px;
+            height: 150px;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>teste flexbox</h1>
+    <main class="container">
+
+        <div class="bloco1">1</div>
+        <div class="bloco2">2</div>
+        <div class="bloco3">3</div>
+         <!--
+        <div class="bloco1"></div>
+        <div class="bloco2"></div>
+        <div class="bloco3"></div>
+        <div class="bloco1"></div>
+        <div class="bloco2"></div>
+        <div class="bloco3"></div>
+
+         -->
+      
+    </main>
+</body>
+</html>
